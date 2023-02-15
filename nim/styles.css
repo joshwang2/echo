@@ -1,0 +1,46 @@
+
+/* CSS comment */ 
+
+/* Font styles */
+.myName {
+    color: black;
+    font-family: Trebuchet, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+}
+.myPosition {
+    color: black; 
+    font-family: Trebuchet, sans-serif;
+    font-size: 18px;
+    font-weight: normal; 
+}  
+.uniName {
+    color: brown; 
+    font-family: Trebuchet, sans-serif;
+    font-size: 18px;
+    font-weight: normal; 
+}
+
+BODY {
+    /* Less blue than the others since links are blue */
+    background-color: lightgray;
+    /* wrap */
+    max-width: 600pt;
+    
+    /* larger font for readability */
+    font-size: 16px;
+    font-weight: normal; 
+    font-family: Georgia;
+} 
+  
+/*******************************************/
+/* links un-adorned until mouseover 
+   need to provide in this order */
+a:link, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+  

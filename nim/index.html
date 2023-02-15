@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<!-- a comment in HTML -->
+<!-- header info: title, etc. but also reference stylesheet for browser -->
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Nim Telson's Home Page</title>
+</head>
+
+<!-- the body of the document -->
+<body>
+    <!-- div elements group content; it doesn't mean anything on its own 
+         div = "block" level -->
+    <div class="pictureAndInfo">
+        <!-- an HTML table
+              TR: table row
+              TD: table datum -->
+        <!-- sometimes you'll see tags capitalized, it doesn't matter much (for now) -->
+        <TABLE width=100%>
+            <TR>
+                <TD>
+                    <!-- an image with alt text -->
+                    <IMG width=300 alt="A Very Cool Picture of Nim" src="nim.png">
+                </TD>
+                <TD>
+                    <!-- a paragraph (unlike a div, this has meaning for the content within)-->
+                    <P>
+                        <!-- span is useful for applying attributes to text. it's like an inline div -->
+                        <span class="myName">Nim Telson</span><br />
+                        <span class="myPosition">Fellow Student in 0320</span><br />
+                        <span class="uniName">Brown University</span><br />
+                    </P>
+                    <P>
+                        <!-- strong is different from bold (which uses a <b> tag)
+                             strong is semantic: tells the browser something is important  
+                             bolding is syntactic, about the display of the thing -->
+                        <strong>E-mail:</strong> nim.telson [at] gmail [dot] com
+                    </P>
+                </TD>
+            </TR>
+        </TABLE>
+                
+    </div>
+    
+    <!-- the style sheet isn't /using/ these class names (yet) but they're useful for 
+         applying custom styling -->
+    <div class="contentBox">
+        Greetings, fellow students! I'm Nim, and I'm very interested in 
+        <A HREF="https://cs0320.github.io/">CS 32.</A> Sometimes you'll see 
+        me ask questions on EdStem, and other times I might show up at collab section. Hope to 
+        see you all around soon!                 
+    </div>
+</body>
+
+</html>
