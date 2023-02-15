@@ -1,3 +1,11 @@
+let prevCommands: String[] = [];
+let prevOutputs: String[] = [];
+
+//True implies our mode is brief, otherwise it is verbose
+let mode = true;
+
+//Current command the user is inputting
+let currCommand: HTMLCollectionOf<Element> = document.getElementsByClassName('repl-command-box');
 
 // The window.onload callback is invoked when the window is first loaded by the browser
 window.onload = () => {    
@@ -57,18 +65,12 @@ function prepareSubmitPress() {
     }
 }
 
-// We'll use a global state reference for now
-let submitPressCount = 0
-function getSubmitPressCount() {
-    return submitPressCount;
-}
-
 function handleButtonPress(event: MouseEvent) {    
     // The event has more fields than just the key pressed (e.g., Alt, Ctrl, etc.)
-   submitPressCount = submitPressCount + 1;
-    alert(`${getSubmitPressCount()} submit presses seen so far.`);
+    currCommand = document.getElementsByClassName('repl-command-box');
+    console.log(currCommand);
 }
 
 // Provide this to other modules (e.g., for testing!)
 // The configuration in this project will require /something/ to be exported.
-export {prepareSubmitPress, getSubmitPressCount, handleButtonPress, handleKeypress, prepareKeypress, getPressCount}
+export {prepareSubmitPress, handleButtonPress, handleKeypress, prepareKeypress, getPressCount}

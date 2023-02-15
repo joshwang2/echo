@@ -9,15 +9,6 @@
     min-height:95vh;    
 }
 
-.repl-history {      
-    height:85vh;   
-    margin: auto;
-    display: block;
-    overflow: scroll;    
-    background-color: gray;
-    background-image: url(../../McDonalds.png);
-}
-
 .repl-input {        
     margin: auto;    
     height:10vh;
